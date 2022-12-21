@@ -44,8 +44,8 @@
 ARRANCAR: manage.py runserver <-- Recordar debeis estar en la principal carpeta donde esta el "manage.py"
 Para poner las rutas estaticas:
 
-  * from django.conf import settings
-  * from django.conf.urls.static import static
+    from django.conf import settings
+    from django.conf.urls.static import static
+  
   urlpatterns =+ [
-
-  ] * + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+  ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
