@@ -78,7 +78,7 @@ DATABASES = {
     'default': 
     {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'films',
+        'NAME': '',
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
