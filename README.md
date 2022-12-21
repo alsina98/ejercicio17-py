@@ -27,11 +27,10 @@
     py manage.py makemigrations
     
 # Tercero: Crear un superusuario
-  py manage.py createsuperuser
+  - py manage.py createsuperuser
 
 # Cuarto: Crear la app y añadirla al settings
-  django-admin startapp "catalog"
-  (Ir al settings del proyecto y añadir la nueva app em "INSTALLED_APPS")
+  - django-admin startapp "catalog" (Ir al settings del proyecto y añadir la nueva app em "INSTALLED_APPS")
 
 # Quinto: Añadir la Ruta de la APP 
 
@@ -50,5 +49,3 @@ Para poner las rutas estaticas:
   urlpatterns =+ [
 
   ] * + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-
