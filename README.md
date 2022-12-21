@@ -1,11 +1,12 @@
 # Buenas a todos por aqui os pongo una guia a seguir para poder inicializar el projecto
 
 # Primero: Debeis ejectuar las virtualizacion 
-  py -3 -m venv venv
-  venv\Scripts\activate
+  # py -3 -m venv venv
+  # venv\Scripts\activate
 # Sefundo: Mirar a donde guardareis la base de datos NYSQL, POGRESQL, SQLITE... 
-  En mi caso use MYSQL. Por defecto Django mtiene SQLITE
-  pip install mysqlclient
+  # En mi caso use MYSQL. 
+  # Por defecto Django mtiene SQLITE
+  # pip install mysqlclient
   
     (DATOS PARA QUE FUNCIONE LA CONFIGURACION DE MYSQL)
 
