@@ -79,10 +79,10 @@ DATABASES = {
     {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'films',
-        'USER': 'root',
+        'USER': '',
         'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
