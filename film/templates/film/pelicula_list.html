@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<div class="container text-center">
+    <h1 class="h3">Listado de Peliculas</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        {% if pelicula_list %}
+        {% for pelicula in pelicula_list %}
+            <div class="card">
+                <div class="card-title">
+                    <p class="text-center h4"><a class="title-film" href="{{ pelicula.url }}" target="_blank">{{ pelicula.title }}</a></p>
+                </div>
+                <div class="card-body">
+                    <p>{{ pelicula.summary }}</p>
+                </div>
+            </div>
+        {% endfor %}
+        {% else %}
+            <p>No hay peliculas</p>
+    {% endif %}
+    </div>
+
+</div>
+
+{% endblock %}

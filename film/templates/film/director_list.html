@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<div class="container text-center">
+    <h1 class="h3">Listado de Directores</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        {% if director_list %}
+        {% for director in director_list %}
+            <div class="card">
+                <div class="card-title">
+                    {{ director.last_name }}, {{ director.first_name }}
+                </div>
+                <div class="card-body">
+                    {{ director.date_of_birth }}
+                </div>
+            </div>
+        {% endfor %}
+        {% else %}
+            <p>No hay directores</p>
+    {% endif %}
+    </div>
+
+</div>
+
+{% endblock %}

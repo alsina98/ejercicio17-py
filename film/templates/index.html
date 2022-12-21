@@ -1,0 +1,35 @@
+{% extends "base_generic.html" %}
+
+    {% block content %}
+
+
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Bienvenidos a todos</h1>
+            <div class="col-md-8">
+                {% load static %}
+                <img src="{% static 'img/mosaico.png' %}" alt="404" class="img-portada">
+            </div>
+            <div class="col-md-4">
+                <p>Bienvenidos a mi página web donde podreis ver peliculas de diferentes tematicas.</p>
+                <p>Esta pagina web esta hecha en Django, HTML, CSS y Bootstrap</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2 class="h4">Contador de Peliculas y Directores</h2>
+        <span>Aquí podeís ver unos contadores dinámicos de las peliculas y directores que se van agregando</span>
+        <table class="table">
+            <tr>
+                <th>Numero de Peliculas</th>
+                <th>Numero de Directores</th>
+            </tr>
+            <tr>
+                <td>{{ num_peliculas }}</td>
+                <td>{{ num_directores }}</td>
+            </tr>
+        </table>
+    </div>
+
+    {% endblock %}

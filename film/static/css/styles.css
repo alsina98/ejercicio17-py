@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(201, 159, 223, 0.589), rgba(170, 221, 237, 0.555)), url('../img/cine_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.25rem;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+}
+
+
+.navbar ul li a::before{
+    content: "";
+    height: 0.2rem;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.4s ease-out;
+}
+
+
+.navbar ul li a:hover::before{
+    width: 100%;
+}
+
+.container{
+    margin-top: 2rem;
+}
+
+.img-portada{
+    width: 100%;
+}
+
+.peli{
+    width: 100%;
+    padding: 2rem;
+}
+
+.format{
+    margin: 1.5rem;
+}
+
+.title-film {
+    text-decoration: none;
+    color: blueviolet;
+    font-family: Roboto, "sans-serif";
+}
+
+.title-film::before{
+    content: "";
+    height: 0.2rem;
+    width: 0%;
+    background: forestgreen;
+    position: absolute;
+    left: 0;
+    transition: 0.4s ease-out;
+}
+
+
+.title-film:hover::before{
+    width: 100%;
+}
+
+
+.card{
+    margin: 0.8rem !important;
+}
+
+@media screen and (max-width: 760px) {
+    .img-logo-navbar{
+        display: none;
+    }
+}
