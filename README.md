@@ -3,9 +3,9 @@
 # Primero: Debeis ejectuar las virtualizacion 
   - py -3 -m venv venv
   - venv\Scripts\activate
-# Sefundo: Mirar a donde guardareis la base de datos NYSQL, POGRESQL, SQLITE... 
+# Segundo: Mirar a donde guardareis la base de datos NYSQL, POGRESQL, SQLITE... 
   - En mi caso use MYSQL. 
-  - Por defecto Django mtiene SQLITE
+  - Por defecto Django tiene SQLITE
   - pip install mysqlclient
   
     (DATOS PARA QUE FUNCIONE LA CONFIGURACION DE MYSQL)
