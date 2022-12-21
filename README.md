@@ -34,9 +34,9 @@
 
 # Quinto: Añadir la Ruta de la APP 
 
-  * from django.urls import include
+    from django.urls import include
   urlpatterns =+ [
-    *  path('catalog/', include("catalog.urls")),
+    path('catalog/', include("catalog.urls")),
   ]
   
 # Extra: 
